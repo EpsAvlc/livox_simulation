@@ -6,4 +6,10 @@ Mainly refer to repo: [ARTI-Robots/gazebo_utils](https://github.com/ARTI-Robots/
 ## Usage
 Before you write your urdf file by using this plugin, catkin_make/catkin build is needed.
 
-A simple demo is shown in...
+A simple demo is shown in demo.launch
+
+run 
+```
+    roslauch livox_simulation demo.launch
+```
+to see.
