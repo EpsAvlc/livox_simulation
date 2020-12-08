@@ -216,7 +216,6 @@ void ArtiGazeboLaserLivox::Disconnect()
 // Create new Laserscan
 void ArtiGazeboLaserLivox::OnNewLaserScans()
 {
-  ROS_INFO("Enter callback");
   if (this->topic_name_ != "")
   {
 #if GAZEBO_MAJOR_VERSION >= 8

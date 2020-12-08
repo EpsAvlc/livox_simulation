@@ -12,4 +12,5 @@
   </include>
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg robot_urdf)" />
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model crank_lidar -param robot_description" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find livox_simulation)/rviz/demo.rviz"/>
 </launch>
