@@ -1,0 +1,15 @@
+<launch>
+  <arg name="world" default="$(find livox_simulation)/worlds/playground.world" />
+  <arg name="robot_urdf" default="$(find livox_simulation)/urdf/demo.urdf.xacro" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world)"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg robot_urdf)" />
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model crank_lidar -param robot_description" />
+</launch>

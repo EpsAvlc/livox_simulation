@@ -1,0 +1,13 @@
+min_range: 0.0  # m
+max_range: 30.0  # m
+resolution: 0.002  # m
+samples: 500
+num_double_ellipses: 5 # number of 8-figures
+update_rate: 10  # Hz
+visualize: True
+noise_mean: 0.0
+noise_stddev: 0.01
+topic_prefix: livox_lidar/
+rotation_increment: 0.1
+interpolation_points: 10
+max_interpolation_distance: 2.0
