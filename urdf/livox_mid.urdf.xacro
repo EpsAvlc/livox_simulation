@@ -96,7 +96,7 @@
       <origin rpy="0 0 0" xyz="0.049 0.0 0.0457"/>
     </joint>
 
-    <xacro:Livox_Mid_gazebo_sensor name="${name}" visualize="${visualize}" min_range="{min_range}" max_range="{max_range}" resolution="{resolution}" samples="{samples}" num_double_ellipses="{num_double_ellipses}" update_rate="${update_rate}" noise_mean="{noise_mean}" noise_stddev="{noise_stddev}" topic_prefix="{topic_prefix}" rotation_increment="{rotation_increment}"/>
+    <xacro:Livox_Mid_gazebo_sensor name="${name}" visualize="${visualize}" min_range="${min_range}" max_range="${max_range}" resolution="${resolution}" samples="${samples}" num_double_ellipses="${num_double_ellipses}" update_rate="${update_rate}" noise_mean="${noise_mean}" noise_stddev="${noise_stddev}" topic_prefix="${topic_prefix}" rotation_increment="${rotation_increment}"/>
   </xacro:macro>
 
   <!-- ============================================= Livox_Mid100 macro ============================================= -->
