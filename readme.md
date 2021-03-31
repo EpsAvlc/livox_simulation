@@ -1,4 +1,7 @@
 # Livox Simulation 
+
+> A more realistic simulation is [livox_laser_simulation](https://github.com/lvfengchi/livox_laser_simulation), this repo is no longer maintained.
+
 A package to provide plug-in for [Livox mid-40/mid-100 LiDAR](https://www.livoxtech.com/mid-40-and-mid-100). 
 
 Mainly refer to repo: [ARTI-Robots/gazebo_utils](https://github.com/ARTI-Robots/gazebo_utils)
